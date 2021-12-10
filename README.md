@@ -78,10 +78,10 @@ For a short presentation see:
 * [Presentation](./Notebooks/Presentation.pdf)
 
 ## Repository Structure
--README.md                     <- The top-level README for reviewers of this project
--Notebooks                     
-    -Report.ipynb              <- Narrative documentation of analysis in Jupyter notebook
-    -MaidenVoyage.ipynb        <- Jupyter notebook containing all code that was used with documentation
--Presentation.pdf                  <- PDF version of project presentation
--dataraw                       <- Both sourced externally and generated with code
--imgs                          <- Both sourced externally and generated with code
+- README.md                     <- The top-level README for reviewers of this project
+- Notebooks                     
+    - Report.ipynb              <- Narrative documentation of analysis in Jupyter notebook
+    - MaidenVoyage.ipynb        <- Jupyter notebook containing all code that was used with documentation
+- Presentation.pdf                  <- PDF version of project presentation
+- dataraw                       <- Both sourced externally and generated with code
+- imgs                          <- Both sourced externally and generated with code
