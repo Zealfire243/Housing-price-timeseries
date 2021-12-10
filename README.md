@@ -42,6 +42,8 @@ I subtracted the exponential rolling mean and differenced the data in order to d
 
 I checked the autocorrelation and the partial autocorrelation. The autocorrelation looks great, starts with a high correlation but immediately drops and then flucuates around 0. For the partial autocorrelation, while most performed great, some of the time series didnt preform as well as others with spikes of correlation popping up towards the end as well as beginning. 
 
+![Autocorrelation](./imgs/autocorr.png)
+
 ![Good Partial Autocorrelation](./imgs/part_autocorr_good.png)
 ![Bad Partial Autocorrelation](./imgs/part_autocorr_bad.png)
 
