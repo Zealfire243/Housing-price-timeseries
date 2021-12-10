@@ -10,13 +10,19 @@ For this portion of the project I focused on a predictive time series for a smal
 
 ## Data
 
-Housing data sourced from Zillow that dates from January 2000, to September 2021. The main resource that I am using to predict furture housing values is the Zillow Home Index Value. The main aspect of the Zillow Home Index Value (ZHVI) is the Zestimate. The Zestimate of a house is the estimated value of that individual house. Zestimates for on-market houses across the entire US have a median error of 2%. This means that for the on-market homes, half of the Zestimates are within 2% of the selling price, while the other half is not. Off-market Zestimates have a median error of 6.9%. One of the core functions of the ZHVI is calculating the weighted average of each home’s appreciation in the property universe. The homes Zestimate or zi,t-1 and ,zi,t , at time t-1 and t respectively, is used to calculate the individual home appreciation (ai,t). 
+Housing data sourced from Zillow that dates from January 2000, to September 2021. The main resource that I am using to predict furture housing values is the Zillow Home Index Value. The main aspect of the Zillow Home Index Value (ZHVI) is the Zestimate. The Zestimate of a house is the estimated value of that individual house. Zestimates for on-market houses across the entire US have a median error of 2%. This means that for the on-market homes, half of the Zestimates are within 2% of the selling price, while the other half is not. Off-market Zestimates have a median error of 6.9%. One of the core functions of the ZHVI is calculating the weighted average of each home’s appreciation in the property universe. The homes Zestimate or zi,t-1 and ,zi,t , at time t-1 and t respectively, is used to calculate the individual home appreciation (ai,t).
+
 ![Appreciation](./imgs/z_appreciation.png)
+
 Each individual home appreciation is then multiplied by a weight (wi,t-1). This weight is found by dividing a homes zestimate by the sum of all Zestimates in the region.
+
 ![Weight](./imgs/z_weight.png)
+
 The total market appreciation, At, is the sum of the weighted appreciation of each home.
 The total market appreciation is then used to find the previous typical home value in every period by dividing the mean Zestimate of the property universe at time t (It) by 1 plus the total market appreciation at time t.
+
 ![Total Appreciation](./imgs/z_total_appreciation.png)
+
 There has been articles talking about the quality of the Zestimate, due to Zillow losing approx. 500 million from their house flipping business. Although critics say Zillow depended too much on its Zestimate, other experts are saying it has more to do with holding on to too many houses for too long and the expenses that come along with that.
 
 ## Methods
@@ -51,7 +57,7 @@ With these models I forecasted predictions that are usuable in my final project.
 Note: This is displaying a single result of the 27 different time series
 
 ![Preprocessed Forecast](./imgs/pre_forecast.png)
-![Processed Forecast](./imgs/forcast.png)
+![Processed Forecast](./imgs/forecast.png)
 
 ## Next Steps
 
