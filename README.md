@@ -10,7 +10,7 @@ For this portion of the project I focused on a predictive time series for a smal
 
 ## Data
 
-Housing data sourced from Zillow that dates from January 2000, to September 2021. The main resource that I am using to predict furture housing values is the Zillow Home Index Value. The main aspect of the Zillow Home Index Value (ZHVI) is the Zestimate. The Zestimate of a house is the estimated value of that individual house. Zestimates for on-market houses across the entire US have a median error of 2%. This means that for the on-market homes, half of the Zestimates are within 2% of the selling price, while the other half is not. Off-market Zestimates have a median error of 6.9%. One of the core functions of the ZHVI is calculating the weighted average of each home’s appreciation in the property universe. The homes Zestimate or zi,t-1 and ,zi,t , at time t-1 and t respectively, is used to calculate the individual home appreciation (ai,t).
+Housing data sourced from [Zillow](https://www.zillow.com/research/data/) that dates from January 2000, to September 2021. The main resource that I am using to predict furture housing values is the Zillow Home Index Value. The main aspect of the Zillow Home Index Value (ZHVI) is the Zestimate. The Zestimate of a house is the estimated value of that individual house. Zestimates for on-market houses across the entire US have a median error of 2%. This means that for the on-market homes, half of the Zestimates are within 2% of the selling price, while the other half is not. Off-market Zestimates have a median error of 6.9%. One of the core functions of the ZHVI is calculating the weighted average of each home’s appreciation in the property universe. The homes Zestimate or zi,t-1 and ,zi,t , at time t-1 and t respectively, is used to calculate the individual home appreciation (ai,t).
 
 ![Appreciation](./imgs/z_appreciation.png)
 
@@ -27,7 +27,7 @@ There has been articles talking about the quality of the Zestimate, due to Zillo
 
 ## Methods
 
-The data I sourced was seperated by RegionID and produced 26000 different regions. I decided to immediately change my focus to counties as there are only 3000. I started by taking the 27 values for the counties. I cut data that predates 2012 due to the housing bubble that went from 2005 to 2012.
+The data I sourced was seperated by RegionID and produced 26000 different regions. I decided to immediately change my focus to counties as there are only 3000. I started by taking the 27 values for the counties. I chose these 27 counties as the 27 middle counties according to the median. I cut data that predates 2012 due to the housing bubble that went from 2005 to 2012.
 
 ![Full Data Display](./imgs/typical_time_series.png)
 ![Post Housing Bubble Display](./imgs/post_housing_bubble.png)
