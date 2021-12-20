@@ -32,6 +32,10 @@ The data I sourced was seperated by RegionID and produced 26000 different region
 ![Full Data Display](./imgs/typical_time_series.png)
 ![Post Housing Bubble Display](./imgs/post_housing_bubble.png)
 
+Display of the Counties that were chosen.
+
+![Counties Chosen](./imgs/map.png)
+
 I took steps to make the data stationary. I logged the data to normalize it. 
 
 ![Logged Time Series](./imgs/logged.png)
@@ -74,6 +78,7 @@ For a more detailed look into my project see my full report:
 For additional infomation see:
 
 * [All in one Notebook](./Notebooks/MaidenVoyage.ipynb)
+* [Web Scraping Notebook](./Notebooks/Web_Scraping.ipynb)
 
 For a short presentation see:
 
