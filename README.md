@@ -79,16 +79,16 @@ For additional infomation see:
 
 * [All in one Notebook](./Notebooks/MaidenVoyage.ipynb)
 * [Web Scraping Notebook](./Notebooks/Web_Scraping.ipynb)
-
+   
 For a short presentation see:
 
-* [Presentation](./Notebooks/Presentation.pdf)
+* [Presentation](./Housing-Price-Prediction-Presentation.pdf)
 
 ## Repository Structure
 - README.md                     <- The top-level README for reviewers of this project
 - Notebooks                     
     - Report.ipynb              <- Narrative documentation of analysis in Jupyter notebook
     - MaidenVoyage.ipynb        <- Jupyter notebook containing all code that was used with documentation
-- Presentation.pdf                  <- PDF version of project presentation
+- Housing-Price-Prediction-Presentation.pdf                  <- PDF version of project presentation
 - dataraw                       <- Both sourced externally and generated with code
 - imgs                          <- Both sourced externally and generated with code
